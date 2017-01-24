@@ -31643,7 +31643,7 @@ var _a;
 "use strict";
 const environment = {
     production: true,
-    serviceUrl: "http://247up-kmregistratie-service-dev.azurewebsites.net"
+    serviceUrl: "http://247up-kmregistratie-service-tst.azurewebsites.net"
 };
 /* harmony export (immutable) */ exports["a"] = environment;
 
