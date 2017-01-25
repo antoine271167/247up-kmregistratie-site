@@ -61,23 +61,20 @@ var RitService = (function () {
         this._index = 0;
         //
     }
-    // ReSharper disable once TsResolvedFromInaccessibleModule
     RitService.prototype.updateRit = function (rit) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Headers */]({ "Content-Type": "application/json" });
         var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
-        return this._http.post(__WEBPACK_IMPORTED_MODULE_6__environments_environment__["a" /* environment */].serviceUrl + "/api/rit", rit, options)
+        return this._http.post(__WEBPACK_IMPORTED_MODULE_6__environments_environment__["a" /* environment */].serviceUrl + "/api/rit/update", rit, options)
             .map(function (response) { return (response.json()); })
             .catch(this.handleError);
     };
-    // ReSharper disable once TsResolvedFromInaccessibleModule
     RitService.prototype.getAllRitten = function () {
-        return this._http.get(__WEBPACK_IMPORTED_MODULE_6__environments_environment__["a" /* environment */].serviceUrl + "/api/rit")
+        return this._http.get(__WEBPACK_IMPORTED_MODULE_6__environments_environment__["a" /* environment */].serviceUrl + "/api/rit/getall")
             .map(function (response) { return (response.json()); })
             .catch(this.handleError);
     };
-    // ReSharper disable once TsResolvedFromInaccessibleModule
     RitService.prototype.getRitById = function (id) {
-        return this._http.get(__WEBPACK_IMPORTED_MODULE_6__environments_environment__["a" /* environment */].serviceUrl + "/api/rit/" + id)
+        return this._http.get(__WEBPACK_IMPORTED_MODULE_6__environments_environment__["a" /* environment */].serviceUrl + "/api/rit/getbyid/" + id)
             .map(function (response) { return (response.json()); })
             .catch(this.handleError);
     };
@@ -103,7 +100,7 @@ var RitService = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
 var environment = {
     production: true,
-    serviceUrl: "http://247up-kmregistratie-service-tst.azurewebsites.net"
+    serviceUrl: "http://247up-kmregistratie-service-prd.azurewebsites.net"
 };
 //# sourceMappingURL=D:/TfsOnlineGit/247UP - KmRegistratie - Site/src/kmregistratie/src/environment.prod.js.map
 
