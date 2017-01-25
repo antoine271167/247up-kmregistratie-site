@@ -100,7 +100,7 @@ var RitService = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
 var environment = {
     production: true,
-    serviceUrl: "http://247up-kmregistratie-service-prd.azurewebsites.net"
+    serviceUrl: "http://247up-kmregistratie-service-tst.azurewebsites.net"
 };
 //# sourceMappingURL=D:/TfsOnlineGit/247UP - KmRegistratie - Site/src/kmregistratie/src/environment.prod.js.map
 
